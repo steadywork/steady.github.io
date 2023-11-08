@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index copy.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
+
+  
+  <title>Interactive comments section</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div>
+   
+  <div class="comment">
+      <button class="addbutton" style="padding-bottom: 60px; margin-bottom: -90px;">
+          <p onclick="incrementNumber()" style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 2px; margin-bottom: -10px;">
+            +
+          </p>    <br>
+           <p style="font-size: 15px; color: hsl(238, 40%, 52%); margin-top: 0.5px; margin-bottom: -13px;">
+          <span id="number">12</span>
+          </p>      <br>
+           <p onclick="decrementNumber()"    style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 0.5px;">
+              -
+          </p> 
+          <script>
+              var currentNumber = 0;
+              function incrementNumber() {
+                  currentNumber += 1;
+                  document.getElementById("number").textContent = currentNumber;
+              }
+        
+              function decrementNumber() {
+                  if (currentNumber > 0) {
+                      currentNumber -= 1;
+                      document.getElementById("number").textContent = currentNumber;
+                  }
+              }
+          </script>
+      </button>
+    <img style="display: inline;" src="images/avatars/image-amyrobson.png" alt="amyrobson" height="25px"  class="amyrobson">
+      <h3  style=" display: inline; margin-right: 10px; margin-left: 40px; font-size: 16px;">amyrobson</h3>   
+      <p style="display: inline; margin-right: 250px;">1 month ago </p>
+      <span style="float: right;">
+        <img  src="images/icon-reply.svg" alt="reply">
+        <p style=" display: inline;" class="reply">Reply</p>
+        </span>  <p style="margin-left: 45px;">
+    Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed 
+    the design and the responsiveness at various breakpoints works really well.
+      </p>
+  </div>
+  <div class="comment2">
+    <img style="display: inline; margin-top: 5px;" src="images/avatars/image-juliusomo.png" alt="amyrobson" height="25px"  class="amyrobson">
+    <button class="border1">
+      <p>
+      @amyrobson,yeah, the attention to detail with the design is      
+      </p>
+    </button>
+    <button class="reply_button">
+      REPLY
+    </button>
+</div>
+  
+  <div class="comment">
+       <button class="addbutton" style="padding-bottom: 60px; margin-bottom: -90px;">
+          <p onclick="incrementNumber()" style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 2px; margin-bottom: -10px;">
+            +
+          </p>    <br>
+           <p style="font-size: 15px; color: hsl(238, 40%, 52%); margin-top: 0.5px; margin-bottom: -13px;">
+          <span id="number">5</span>
+          </p>      <br>
+           <p onclick="decrementNumber()"    style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 0.5px;">
+              -
+          </p> 
+          <script>
+              var currentNumber = 0;
+              function incrementNumber() {
+                  currentNumber += 1;
+                  document.getElementById("number").textContent = currentNumber;
+              }
+        
+              function decrementNumber() {
+                  if (currentNumber > 0) {
+                      currentNumber -= 1;
+                      document.getElementById("number").textContent = currentNumber;
+                  }
+              }
+          </script>
+      </button>
+    <img style="display: inline;" src="images/avatars/image-maxblagun.png" alt="amyrobson" height="25px"  class="amyrobson">
+      <h3  style="display: inline; margin-right: 10px; margin-left: 40px; font-size: 16px;">maxblagun</h3>   
+      <p style="display: inline;">2 weeks ago </p>
+      <span style="float: right;">
+      <img  src="images/icon-reply.svg" alt="reply">
+      <p style=" display: inline;" class="reply">Reply</p>
+      </span>
+      <p style="margin-left: 45px;">
+      Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps
+       you can give me an insight on where I can learn React? Thanks!
+
+     </p>
+  </div>
+  <div class="comment">
+    <button class="addbutton" style="padding-bottom: 60px; margin-bottom: -90px;">
+      <p onclick="incrementNumber()" style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 2px; margin-bottom: -10px;">
+        +
+      </p>    <br>
+       <p style="font-size: 15px; color: hsl(238, 40%, 52%); margin-top: 0.5px; margin-bottom: -13px;">
+      <span id="number">4</span>
+      </p>      <br>
+       <p onclick="decrementNumber()"    style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 0.5px;">
+          -
+      </p> 
+      <script>
+          var currentNumber = 0;
+          function incrementNumber() {
+              currentNumber += 1;
+              document.getElementById("number").textContent = currentNumber;
+          }
+    
+          function decrementNumber() {
+              if (currentNumber > 0) {
+                  currentNumber -= 1;
+                  document.getElementById("number").textContent = currentNumber;
+              }
+          }
+      </script>
+  </button>
+    <img style="display: inline;" src="images/avatars/image-ramsesmiron.png"     alt="amyrobson" height="25px"  class="amyrobson">
+      <h3  style="display: inline; margin-right: 10px; margin-left: 40px; font-size: 16px;">ramsesmiron</h3>   
+      <p style="display: inline; margin-right: 340px;">1 week ago </p>
+      <span style="float: right;">
+        <img  src="images/icon-reply.svg" alt="reply">
+        <p style=" display: inline;" class="reply">Reply</p>
+        </span>  <p style="margin-left: 45px;">
+        <span style="color:  hsl(238, 40%, 52%);"> @maxblagun</span>
+      If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+
+      </p>
+  </div>
+  <div class="comment2">
+    <img style="display: inline; margin-top: 5px;" src="images/avatars/image-juliusomo.png" alt="amyrobson" height="25px"  class="amyrobson">
+    <button class="border1">
+      <p>
+        @ramsesmiron, just to add another point
+      </p>
+    </button>
+    <button class="reply_button">
+      REPLY
+    </button>
+</div>
+<span>
+  
+
+<div class="comment3">
+  <button class="addbutton" style="padding-bottom: 60px; margin-bottom: -90px;">
+    <p onclick="incrementNumber()" style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 2px; margin-bottom: -10px;">
+      +
+    </p>    <br>
+     <p style="font-size: 15px; color: hsl(238, 40%, 52%); margin-top: 0.5px; margin-bottom: -13px;">
+    <span id="number">2</span>
+    </p>      <br>
+     <p onclick="decrementNumber()"    style="font-size: 20px; color: hsl(238, 40%, 52%); margin-top: 0.5px;">
+        -
+    </p> 
+    <script>
+        var currentNumber = 0;
+        function incrementNumber() {
+            currentNumber += 1;
+            document.getElementById("number").textContent = currentNumber;
+        }
+  
+        function decrementNumber() {
+            if (currentNumber > 0) {
+                currentNumber -= 1;
+                document.getElementById("number").textContent = currentNumber;
+            }
+        }
+    </script>
+</button>
+  <img style="display: inline;" src="images/avatars/image-juliusomo.png"   alt="amyrobson" height="25px"  class="amyrobson">
+  <h3  style="display: inline; margin-right: 10px; margin-left: 40px; font-size: 16px;">juliusomo</h3>   
+  <button class="you" >
+    you
+  </button>
+    <p style="display: inline; display: flexbox;">2 days ago </p>
+     <button class="deleteBtn" style="float: right;">
+      <img src="images/icon-delete.svg" alt="" class="deleteimg" style="color: black;">
+      Delete
+     </button>
+     <button class="editBtn" style="float: right;">
+      <img src="images/icon-edit.svg" alt="" class="deleteimg" style="color: black;">
+      Edit
+    </button>
+  <br>     
+  <button class="border2"  style="margin-left: 45px;">
+    <p style="text-align: left;">
+      @ramsesmiron i couldnt agree with this. every thing moves so fundamentals
+      and it also seems like everyone knows the newest librabry.// framework             but the functionality are what stays constant
+    </p>
+  </button>
+  <button  syle="float: right;" class="reply_button1"
+  id="updateButton" onclick="replaceButtonWithComment()">
+    UPDATE
+    <script>
+      function replaceButtonWithComment() {
+          var commentDiv = document.createElement("div");
+          commentDiv.className = "comment";
+          commentDiv.innerHTML = `
+              <img style="display: inline;" src="images/avatars/image-juliusomo.png" alt="amyrobson" height="25px" class="amyrobson">
+              <h3 style="display: inline; margin-right: 10px; margin-left: 40px; font-size: 16px;">juliusomo</h3>
+              <p style="display: inline; margin-right: 250px;">2 days ago </p>
+              <span style="float: right;">
+                  <img src="images/icon-reply.svg" alt="reply">
+                  <p style="display: inline;" class="reply">Reply</p>
+              </span>
+              <p>
+                @ramsesmiron i couldnt agree with this. every thing moves so fundamentals
+      and it al
+      so seems like everyone knows the newest librabry.// framework             but the functionality are what stays constant
+      </p>
+          `;
+          var button = document.getElementById("updateButton");
+          var parentElement = button.parentElement;
+          parentElement.replaceChild(commentDiv, button);
+      }
+  </script>
+  </button>
+</div>
+</span></li>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener("click", function (e) {
+    if (e.target && e.target.className == "deleteBtn") {
+        deleteItem(e.target);
+    }
+});
+
+function deleteItem(button) {
+    const listItem = button.parentElement;
+    listItem.remove();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+  .watermark {
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.2); 
+            pointer-events: none;
+            position: absolute;
+            transform: rotate(-30deg); 
+            margin-left: -80px;
+        }
+        
+    </style>
+    <script>
+        function createWatermarks(rows, cols) {
+            const body = document.body;
+            const bodyWidth = window.innerWidth;
+            const bodyHeight = window.innerHeight;
+            const watermarkCount = rows * cols;
+
+            const spacingX = bodyWidth / (cols + 1);
+            const spacingY = bodyHeight / (rows + 1);
+
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= cols; j++) {
+                    const watermark = document.createElement('div');
+                    watermark.className = 'watermark';
+                    watermark.textContent = 'Drop Your Comment Here';
+                    watermark.style.left = `${j * spacingX}px`;
+                    watermark.style.top = `${i * spacingY}px`;
+
+                    body.appendChild(watermark);
+                }
+            }
+        }
+
+        createWatermarks(3, 4);
+    </script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<button onclick="incrementNumber()">
+  +
+  </button> <br>
+  
+   <button>
+  <span id="number">0</span>
+  </button> <br>
+  
+  <button onclick="decrementNumber()">
+  -
+  </button> 	<br>
+  <script>
+      var currentNumber = 0;
+      
+      function incrementNumber() {
+          currentNumber += 1;
+          document.getElementById("number").textContent = currentNumber;
+      }
+
+      function decrementNumber() {
+          if (currentNumber > 0) {
+              currentNumber -= 1;
+              document.getElementById("number").textContent = currentNumber;
+          }
+      }
+  </script>
